@@ -17,6 +17,8 @@ fi
 echo "Setting up venv"
 python3 -m venv venv
 source venv/bin/acivate
+echo "upgarding pip"
+python3 -m pip install --upgrade pip
 echo "Installing requiremnts"
 python3 -m pip3 install -r requirements.txt
 python3 index.py
