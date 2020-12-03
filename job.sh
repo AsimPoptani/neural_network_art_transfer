@@ -31,4 +31,4 @@ echo "upgarding pip"
 python3 -m pip install --upgrade pip
 echo "Installing requiremnts"
 python3 -m pip install -r requirements.txt
-python3 index.py
+srun --ntasks=2 python3 index.py
