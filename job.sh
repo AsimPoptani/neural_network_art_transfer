@@ -18,6 +18,10 @@ if [ -d "venv" ]; then
     echo "Found previous venv deleting"
     rm -rf venv
 fi
+if [ -d "generated_images" ]; then
+    echo "Found previous generated images deleting"
+    rm -rf generated_images
+fi
 echo "Setting up venv"
 pwd
 python3 -m venv venv
