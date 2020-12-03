@@ -8,6 +8,8 @@
 #SBATCH --output=basic_job_%j.log        # Standard output and error log
 #SBATCH --partition=gpu
 
+echo "Pulling latest"
+git pull
 echo "Loading Module"
 module load lang/Python/3.8.2-GCCcore-9.3.0
 if [ -d "venv"]; then
