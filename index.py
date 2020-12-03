@@ -164,7 +164,7 @@ for epoch in range(epochs):
         # imshow(np.array(generated_image[0],dtype=np.uint8))
         # show()
         image_to_save=Image.fromarray(np.array(generated_image[0],dtype=np.uint8))
-        image_to_save.save(f"{epoch}_image.jpg")
+        image_to_save.save(f"generated_images/{epoch}_image.jpg")
 # loss=0.25*content_cost(content_image_value,content_generator_value) + 0.25*style_cost(weights=STYLE_LAYERS[:,1],generated_image_layers=style_generator_value,style_layers=style_image_values)
     # print(loss)
     # optimiser.minimize(loss,var_list=[generated_image])
