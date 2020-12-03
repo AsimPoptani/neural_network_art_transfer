@@ -21,6 +21,7 @@ fi
 if [ -d "generated_images" ]; then
     echo "Found previous generated images deleting"
     rm -rf generated_images
+    mkdir generated_images
 fi
 echo "Setting up venv"
 pwd
