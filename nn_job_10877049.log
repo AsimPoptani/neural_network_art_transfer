@@ -1,0 +1,146 @@
+Pulling latest
+Already up-to-date.
+Loading Modules
+
+The following have been reloaded with a version change:
+  1) compiler/GCCcore/9.3.0 => compiler/GCCcore/8.3.0
+  2) lib/zlib/1.2.11-GCCcore-9.3.0 => lib/zlib/1.2.11-GCCcore-8.3.0
+  3) tools/binutils/2.34-GCCcore-9.3.0 => tools/binutils/2.32-GCCcore-8.3.0
+
+PCI device 00000000:1A:00.0 must be reset with GPU 0 (00000000:1C:00.0).
+PCI device 00000000:1E:00.0 must be reset with GPU 0 (00000000:1C:00.0).
+PCI device 00000000:1A:00.0 must be reset with GPU 1 (00000000:1D:00.0).
+PCI device 00000000:1E:00.0 must be reset with GPU 1 (00000000:1D:00.0).
+One or more incomplete sets of NVLink GPUs were specified.
+GPU Reset couldn't run because the specified GPUs could not be validated for NVLink reset.
+Setting up venv
+/users/ap1751/scratch/neural_network_art_transfer
+upgarding pip
+Installing requiremnts
+2020-12-03 19:07:02.122763: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-12-03 19:07:04.313211: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcuda.so.1
+2020-12-03 19:07:04.410809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:1c:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.72GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-12-03 19:07:04.412282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0000:1d:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.72GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-12-03 19:07:04.412323: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-12-03 19:07:04.414913: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-12-03 19:07:04.417090: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-12-03 19:07:04.417592: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-12-03 19:07:04.419855: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-12-03 19:07:04.421118: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-12-03 19:07:04.425337: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-12-03 19:07:04.430888: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1
+2020-12-03 19:07:04.431605: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-12-03 19:07:04.439162: I tensorflow/core/platform/profile_utils/cpu_utils.cc:104] CPU Frequency: 2000000000 Hz
+2020-12-03 19:07:04.439276: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x46b60c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-03 19:07:04.439295: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-12-03 19:07:04.696399: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x472f380 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2020-12-03 19:07:04.696470: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2020-12-03 19:07:04.696482: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): Tesla V100-SXM2-32GB, Compute Capability 7.0
+2020-12-03 19:07:04.698089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties: 
+pciBusID: 0000:1c:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.72GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-12-03 19:07:04.699473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 1 with properties: 
+pciBusID: 0000:1d:00.0 name: Tesla V100-SXM2-32GB computeCapability: 7.0
+coreClock: 1.53GHz coreCount: 80 deviceMemorySize: 31.72GiB deviceMemoryBandwidth: 836.37GiB/s
+2020-12-03 19:07:04.699512: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-12-03 19:07:04.699537: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-12-03 19:07:04.699550: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcufft.so.10
+2020-12-03 19:07:04.699563: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcurand.so.10
+2020-12-03 19:07:04.699576: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusolver.so.10
+2020-12-03 19:07:04.699589: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcusparse.so.10
+2020-12-03 19:07:04.699602: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+2020-12-03 19:07:04.704896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1858] Adding visible gpu devices: 0, 1
+2020-12-03 19:07:04.704938: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudart.so.10.1
+2020-12-03 19:07:06.080554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-12-03 19:07:06.080640: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]      0 1 
+2020-12-03 19:07:06.080651: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 0:   N Y 
+2020-12-03 19:07:06.080659: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1276] 1:   Y N 
+2020-12-03 19:07:06.085055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 30098 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-32GB, pci bus id: 0000:1c:00.0, compute capability: 7.0)
+2020-12-03 19:07:06.086962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1402] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 30098 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-32GB, pci bus id: 0000:1d:00.0, compute capability: 7.0)
+2020-12-03 19:07:06.562857: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcublas.so.10
+2020-12-03 19:07:07.359073: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library libcudnn.so.7
+Model: "vgg19"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+input_1 (InputLayer)         [(None, 300, 300, 3)]     0         
+_________________________________________________________________
+block1_conv1 (Conv2D)        (None, 300, 300, 64)      1792      
+_________________________________________________________________
+block1_conv2 (Conv2D)        (None, 300, 300, 64)      36928     
+_________________________________________________________________
+block1_pool (MaxPooling2D)   (None, 150, 150, 64)      0         
+_________________________________________________________________
+block2_conv1 (Conv2D)        (None, 150, 150, 128)     73856     
+_________________________________________________________________
+block2_conv2 (Conv2D)        (None, 150, 150, 128)     147584    
+_________________________________________________________________
+block2_pool (MaxPooling2D)   (None, 75, 75, 128)       0         
+_________________________________________________________________
+block3_conv1 (Conv2D)        (None, 75, 75, 256)       295168    
+_________________________________________________________________
+block3_conv2 (Conv2D)        (None, 75, 75, 256)       590080    
+_________________________________________________________________
+block3_conv3 (Conv2D)        (None, 75, 75, 256)       590080    
+_________________________________________________________________
+block3_conv4 (Conv2D)        (None, 75, 75, 256)       590080    
+_________________________________________________________________
+block3_pool (MaxPooling2D)   (None, 37, 37, 256)       0         
+_________________________________________________________________
+block4_conv1 (Conv2D)        (None, 37, 37, 512)       1180160   
+_________________________________________________________________
+block4_conv2 (Conv2D)        (None, 37, 37, 512)       2359808   
+_________________________________________________________________
+block4_conv3 (Conv2D)        (None, 37, 37, 512)       2359808   
+_________________________________________________________________
+block4_conv4 (Conv2D)        (None, 37, 37, 512)       2359808   
+_________________________________________________________________
+block4_pool (MaxPooling2D)   (None, 18, 18, 512)       0         
+_________________________________________________________________
+block5_conv1 (Conv2D)        (None, 18, 18, 512)       2359808   
+_________________________________________________________________
+block5_conv2 (Conv2D)        (None, 18, 18, 512)       2359808   
+_________________________________________________________________
+block5_conv3 (Conv2D)        (None, 18, 18, 512)       2359808   
+_________________________________________________________________
+block5_conv4 (Conv2D)        (None, 18, 18, 512)       2359808   
+_________________________________________________________________
+block5_pool (MaxPooling2D)   (None, 9, 9, 512)         0         
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 512)               0         
+=================================================================
+Total params: 20,024,384
+Trainable params: 20,024,384
+Non-trainable params: 0
+_________________________________________________________________
+tf.Tensor(45106724.0, shape=(), dtype=float32)
+Traceback (most recent call last):
+  File "index.py", line 167, in <module>
+    image_to_save.save(f"generated_images/{epoch}_image.jpg")
+  File "/mnt/lustre/users/ap1751/neural_network_art_transfer/venv/lib/python3.8/site-packages/PIL/Image.py", line 2148, in save
+    fp = builtins.open(filename, "w+b")
+FileNotFoundError: [Errno 2] No such file or directory: 'generated_images/0_image.jpg'
+
+============================
+ Job utilisation efficiency
+============================
+
+Job ID: 10877049
+Cluster: viking
+User/Group: ap1751/clusterusers
+State: FAILED (exit code 1)
+Cores: 1
+CPU Utilized: 00:00:09
+CPU Efficiency: 75.00% of 00:00:12 core-walltime
+Job Wall-clock time: 00:00:12
+Memory Utilized: 964.00 KB
+Memory Efficiency: 0.02% of 4.00 GB
+ Requested wall clock time: 00:30:00
+    Actual wall clock time: 00:00:12
+Wall clock time efficiency: 0.7%
+           Job queued time: 00:00:00
