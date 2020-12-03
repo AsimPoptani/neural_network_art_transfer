@@ -10,8 +10,10 @@
 #SBATCH --gres=gpu:2
 echo "Pulling latest"
 git pull
-echo "Loading Module"
+echo "Loading Modules"
 module load lang/Python/3.8.2-GCCcore-9.3.0
+module load system/CUDA/10.1.243-GCC-8.3.0
+module load numlib/cuDNN/7.6.4.38-gcccuda-2019b
 if [ -d "venv" ]; then
     echo "Found previous venv deleting"
     rm -rf venv
