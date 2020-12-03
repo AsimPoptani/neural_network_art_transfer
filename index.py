@@ -117,7 +117,7 @@ content_image=np.array(Image.open('content.jpg'))
 # imshow(content_image)
 
 # %%
-optimiser=tf.keras.optimizers.Adam(learning_rate=3)
+optimiser=tf.keras.optimizers.Adam(learning_rate=0.03)
 
 
 # %%
@@ -133,7 +133,7 @@ optimiser=tf.keras.optimizers.Adam(learning_rate=3)
 #     optimiser.apply_gradients([(gradient, generated_image)])
 
 # %%
-epochs=20000
+epochs=200000
 # pass content image through model
 content_image_value=model(content_image.reshape(size_of_images))[-1]
 # pass styles image through model
@@ -160,7 +160,7 @@ for epoch in range(epochs):
     grads = tape.gradient(loss, [generated_image])
 # minimize
     optimiser.apply_gradients(zip(grads, [generated_image]))
-    if epoch%20 ==0:
+    if epoch%2000 ==0:
         # imshow(np.array(generated_image[0],dtype=np.uint8))
         # show()
         image_to_save=Image.fromarray(np.array(generated_image[0],dtype=np.uint8))
