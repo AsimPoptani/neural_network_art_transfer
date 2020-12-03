@@ -7,6 +7,7 @@
 #SBATCH --time=00:30:00                  # Time limit hrs:min:sec
 #SBATCH --output=basic_job_%j.log        # Standard output and error log
 #SBATCH --partition=gpu
+#SBATCH --gres=gpu:2
 
 echo "Pulling latest"
 git pull
