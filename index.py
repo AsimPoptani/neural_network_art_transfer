@@ -108,8 +108,8 @@ generated_image=np.zeros(size_of_images).astype(np.float32)
 Image.fromarray(np.array(generated_image[0],dtype=np.uint8))
 
 # %%
-style_image=np.array(Image.open('style.jpg'))
-# style_image=np.array(Image.open('style2.jpg').resize((300,300)))
+# style_image=np.array(Image.open('style.jpg'))
+style_image=np.array(Image.open('style2.jpg').resize((300,300)))
 # imshow(style_image)
 
 # %%
